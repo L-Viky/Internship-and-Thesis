@@ -3,7 +3,7 @@ import tensorflow_datasets as tfds
 from tensorflow import keras
 from tensorflow.keras import layers, constraints
 
-dataset, info = tfds.load("speech_commands", with_info=True, as_supervised=True)
+dataset, info = tfds.load("speech_commands", data_dir = "/media/viky/Linux Dati1/Internship-and-Thesis", with_info=True, as_supervised=True)
 
 class BinaryConstraint(constraints.Constraint):
     def __call__(self, w):
